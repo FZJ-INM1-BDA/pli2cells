@@ -1,5 +1,3 @@
-
-
 <div align="center">
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
@@ -18,12 +16,14 @@ Virtual Cresyl violet staining from 3D-PLI.
 # Quickstart
 
 Clone the repository and install it using pip:
-
 ```bash
     git clone https://jugit.fz-juelich.de/inm-1/bda/personal/aoberstrass/projects/pli2cells.git
     cd pli2cells
     pip install -e .
 ```
+
+Installation requires `gxx_linux-64` and `openmpi` or `mpich` packages.
+
 
 # Usage
 
@@ -42,6 +42,7 @@ To apply trained models adjust and run
 ```bash
 sbatch scripts/apply_models.sbatch
 ```
+
 
 # Project Organization
 ```
@@ -88,6 +89,7 @@ sbatch scripts/apply_models.sbatch
 ├── setup.cfg                     <- Declarative configuration of the project.
 └── README.md                     <- This file
 ```
+
 
 # How to Cite
 

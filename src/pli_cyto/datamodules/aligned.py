@@ -13,8 +13,6 @@ from pli_transforms.augmentations.pytorch import ToTensorPLI
 from pli_cyto import utils
 from pli_cyto.datamodules.components.sections import SectionSampler
 
-
-
 # Distributed
 from atlasmpi import MPI
 
