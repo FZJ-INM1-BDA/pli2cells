@@ -1,0 +1,32 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - unetdftstyle_affine.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "test_300"
+
+seed: 299792458
+
+model:
+  rec_loss: mae_loss
+  style_loss: masked_gram
+  equivariant_loss: mse_loss
+  style_loss_weight: 30_000.0
+  rec_loss_weight: 0.3
+  equivariant_loss_weight: 0.1
+
+  gen:
+    enc_channels: [ 32, 64, 128, 256, 512 ]
+    dec_channels: [ 512, 256, 128, 64, 32 ]
+
+datamodule:
+  batch_size: 32
+  cyto_patch_size: [300, 300]
+

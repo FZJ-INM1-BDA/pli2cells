@@ -1,0 +1,28 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - wgan_affine.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "wgan_with_reg_3"
+
+seed: 3
+
+model:
+  lr_gen: 1e-4
+  lr_disc: 1e-4
+  adv_loss: adversarial_ws
+  rec_loss_weight: 0.5
+  adv_loss_weight: 0.5
+  equivariant_loss_weight: 0.1
+
+datamodule:
+  cyto_patch_size: [360, 360]
+  pli_patch_size: [444, 444]
+

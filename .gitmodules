@@ -1,0 +1,5 @@
+[submodule "datasets/vervet1818-stained"]
+	path = datasets/vervet1818-stained
+	url = https://jugit.fz-juelich.de/aoberstrass/datasets/vervet1818/vervet1818-stained.git
+	datalad-id = e45a2dd5-ac50-4c8c-9d3d-3c982b2b0d38
+	datalad-url = https://jugit.fz-juelich.de/aoberstrass/datasets/vervet1818/vervet1818-stained.git

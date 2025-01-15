@@ -1,0 +1,133 @@
+_target_: pli_cyto.datamodules.aligned.AlignedDataModule
+
+cyto_files:
+  - ${data_dir}/affine/cyto/0000_cyto.h5
+  - ${data_dir}/affine/cyto/0001_cyto.h5
+  - ${data_dir}/affine/cyto/0002_cyto.h5
+  - ${data_dir}/affine/cyto/0003_cyto.h5
+  - ${data_dir}/affine/cyto/0004_cyto.h5
+  - ${data_dir}/affine/cyto/0005_cyto.h5
+  - ${data_dir}/affine/cyto/0006_cyto.h5
+  - ${data_dir}/affine/cyto/0007_cyto.h5
+  - ${data_dir}/affine/cyto/0008_cyto.h5
+  - ${data_dir}/affine/cyto/0009_cyto.h5
+  - ${data_dir}/affine/cyto/0010_cyto.h5
+  - ${data_dir}/affine/cyto/0011_cyto.h5
+  - ${data_dir}/affine/cyto/0012_cyto.h5
+  - ${data_dir}/affine/cyto/0013_cyto.h5
+  - ${data_dir}/affine/cyto/0014_cyto.h5
+  - ${data_dir}/affine/cyto/0015_cyto.h5
+  - ${data_dir}/affine/cyto/0016_cyto.h5
+  - ${data_dir}/affine/cyto/0017_cyto.h5
+  - ${data_dir}/affine/cyto/0018_cyto.h5
+  - ${data_dir}/affine/cyto/0019_cyto.h5
+  - ${data_dir}/affine/cyto/0020_cyto.h5
+  - ${data_dir}/affine/cyto/0021_cyto.h5
+  - ${data_dir}/affine/cyto/0022_cyto.h5
+  - ${data_dir}/affine/cyto/0023_cyto.h5
+  - ${data_dir}/affine/cyto/0024_cyto.h5
+  - ${data_dir}/affine/cyto/0025_cyto.h5
+  - ${data_dir}/affine/cyto/0026_cyto.h5
+
+
+trans_files:
+  - ${data_dir}/affine/transmittance/0000_transmittance.h5
+  - ${data_dir}/affine/transmittance/0001_transmittance.h5
+  - ${data_dir}/affine/transmittance/0002_transmittance.h5
+  - ${data_dir}/affine/transmittance/0003_transmittance.h5
+  - ${data_dir}/affine/transmittance/0004_transmittance.h5
+  - ${data_dir}/affine/transmittance/0005_transmittance.h5
+  - ${data_dir}/affine/transmittance/0006_transmittance.h5
+  - ${data_dir}/affine/transmittance/0007_transmittance.h5
+  - ${data_dir}/affine/transmittance/0008_transmittance.h5
+  - ${data_dir}/affine/transmittance/0009_transmittance.h5
+  - ${data_dir}/affine/transmittance/0010_transmittance.h5
+  - ${data_dir}/affine/transmittance/0011_transmittance.h5
+  - ${data_dir}/affine/transmittance/0012_transmittance.h5
+  - ${data_dir}/affine/transmittance/0013_transmittance.h5
+  - ${data_dir}/affine/transmittance/0014_transmittance.h5
+  - ${data_dir}/affine/transmittance/0015_transmittance.h5
+  - ${data_dir}/affine/transmittance/0016_transmittance.h5
+  - ${data_dir}/affine/transmittance/0017_transmittance.h5
+  - ${data_dir}/affine/transmittance/0018_transmittance.h5
+  - ${data_dir}/affine/transmittance/0019_transmittance.h5
+  - ${data_dir}/affine/transmittance/0020_transmittance.h5
+  - ${data_dir}/affine/transmittance/0021_transmittance.h5
+  - ${data_dir}/affine/transmittance/0022_transmittance.h5
+  - ${data_dir}/affine/transmittance/0023_transmittance.h5
+  - ${data_dir}/affine/transmittance/0024_transmittance.h5
+  - ${data_dir}/affine/transmittance/0025_transmittance.h5
+  - ${data_dir}/affine/transmittance/0026_transmittance.h5
+
+dir_files:
+  - ${data_dir}/affine/direction/0000_direction.h5
+  - ${data_dir}/affine/direction/0001_direction.h5
+  - ${data_dir}/affine/direction/0002_direction.h5
+  - ${data_dir}/affine/direction/0003_direction.h5
+  - ${data_dir}/affine/direction/0004_direction.h5
+  - ${data_dir}/affine/direction/0005_direction.h5
+  - ${data_dir}/affine/direction/0006_direction.h5
+  - ${data_dir}/affine/direction/0007_direction.h5
+  - ${data_dir}/affine/direction/0008_direction.h5
+  - ${data_dir}/affine/direction/0009_direction.h5
+  - ${data_dir}/affine/direction/0010_direction.h5
+  - ${data_dir}/affine/direction/0011_direction.h5
+  - ${data_dir}/affine/direction/0012_direction.h5
+  - ${data_dir}/affine/direction/0013_direction.h5
+  - ${data_dir}/affine/direction/0014_direction.h5
+  - ${data_dir}/affine/direction/0015_direction.h5
+  - ${data_dir}/affine/direction/0016_direction.h5
+  - ${data_dir}/affine/direction/0017_direction.h5
+  - ${data_dir}/affine/direction/0018_direction.h5
+  - ${data_dir}/affine/direction/0019_direction.h5
+  - ${data_dir}/affine/direction/0020_direction.h5
+  - ${data_dir}/affine/direction/0021_direction.h5
+  - ${data_dir}/affine/direction/0022_direction.h5
+  - ${data_dir}/affine/direction/0023_direction.h5
+  - ${data_dir}/affine/direction/0024_direction.h5
+  - ${data_dir}/affine/direction/0025_direction.h5
+  - ${data_dir}/affine/direction/0026_direction.h5
+
+ret_files:
+  - ${data_dir}/affine/retardation/0000_retardation.h5
+  - ${data_dir}/affine/retardation/0001_retardation.h5
+  - ${data_dir}/affine/retardation/0002_retardation.h5
+  - ${data_dir}/affine/retardation/0003_retardation.h5
+  - ${data_dir}/affine/retardation/0004_retardation.h5
+  - ${data_dir}/affine/retardation/0005_retardation.h5
+  - ${data_dir}/affine/retardation/0006_retardation.h5
+  - ${data_dir}/affine/retardation/0007_retardation.h5
+  - ${data_dir}/affine/retardation/0008_retardation.h5
+  - ${data_dir}/affine/retardation/0009_retardation.h5
+  - ${data_dir}/affine/retardation/0010_retardation.h5
+  - ${data_dir}/affine/retardation/0011_retardation.h5
+  - ${data_dir}/affine/retardation/0012_retardation.h5
+  - ${data_dir}/affine/retardation/0013_retardation.h5
+  - ${data_dir}/affine/retardation/0014_retardation.h5
+  - ${data_dir}/affine/retardation/0015_retardation.h5
+  - ${data_dir}/affine/retardation/0016_retardation.h5
+  - ${data_dir}/affine/retardation/0017_retardation.h5
+  - ${data_dir}/affine/retardation/0018_retardation.h5
+  - ${data_dir}/affine/retardation/0019_retardation.h5
+  - ${data_dir}/affine/retardation/0020_retardation.h5
+  - ${data_dir}/affine/retardation/0021_retardation.h5
+  - ${data_dir}/affine/retardation/0022_retardation.h5
+  - ${data_dir}/affine/retardation/0023_retardation.h5
+  - ${data_dir}/affine/retardation/0024_retardation.h5
+  - ${data_dir}/affine/retardation/0025_retardation.h5
+  - ${data_dir}/affine/retardation/0026_retardation.h5
+
+# test_sections: [27, 28, 29, 30]
+train_sections: [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+val_sections: [8]
+val_seed: 0
+train_size: 32_768
+val_size: 1024
+
+batch_size: 12
+cyto_patch_size: [512, 512]
+pli_patch_size: [256, 256]
+channels: 3
+num_workers: 0
+sections_to_ram: True
+pin_memory: False

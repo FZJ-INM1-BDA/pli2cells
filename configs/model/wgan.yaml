@@ -1,0 +1,38 @@
+_target_: pli_cyto.models.dft_wgan.DFTGanLitModule
+lr_gen: 1e-4
+lr_disc: 1e-4
+angles: [
+  -7.0, -6.0, -5.0, -4.0, -3.0, -2.0, -1.0,
+  0.0,1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0
+]
+cyto_patch_size: ${datamodule.cyto_patch_size}
+pli_patch_size: ${datamodule.pli_patch_size}
+min_overlap: 0.9999  # Min overlap of 256 x 256 (minus a bit for stability)
+keep_best: -1
+out_channels: ${datamodule.channels}
+rec_loss: mae_loss
+adv_loss: adversarial_ws
+equivariant_loss: mse_loss
+rec_loss_weight: 0.5
+adv_loss_weight: 0.5
+equivariant_loss_weight: 0.1
+clamp_disc: 0.03
+n_crit: 5
+register_target: True
+registration_method: mse
+
+disc:
+  _target_: pli_cyto.models.components.discriminator.Discriminator
+  feature_maps: 32
+  depth: 4
+  activation: Identity
+  dropout: 0.
+  image_channels: ${datamodule.channels}
+
+gen:
+  _target_: pli_cyto.models.components.generator.PLIUnet
+  enc_channels: [32, 64, 128, 256, 512]
+  dec_channels: [512, 256, 128, 64, 32]
+  n_classes: 3
+  activation: sigmoid
+

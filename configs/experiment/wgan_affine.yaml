@@ -1,0 +1,58 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: cyto_affine.yaml
+  - override /model: wgan.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: ddp.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "wgan-affine"
+
+seed: 299792458
+
+trainer:
+  min_epochs: 900
+  max_epochs: 900
+
+model:
+  lr_gen: 1e-4
+  lr_disc: 1e-4
+  min_overlap: 0.9999  # Min overlap of 256 x 256 (minus a bit for stability)
+  keep_best: -1
+  rec_loss: mae_loss
+  adv_loss: adversarial_ws
+  equivariant_loss: mse_loss
+  rec_loss_weight: 0.5
+  adv_loss_weight: 0.5
+  equivariant_loss_weight: 0.1
+  clamp_disc: 0.03
+  n_crit: 5
+  register_target: True
+
+  gen:
+    _target_: pli.nn.models.unet.PLIUnet
+    enc_channels: [ 32, 64, 128, 256, 512 ]
+    dec_channels: [ 512, 256, 128, 64, 32 ]
+    activation: sigmoid
+
+  disc:
+    _target_: pli_cyto.models.components.discriminator.Discriminator
+    feature_maps: 32
+    depth: 4
+    activation: Identity
+    dropout: 0.
+    image_channels: 3
+
+datamodule:
+  num_workers: 32
+  batch_size: 32
+  cyto_patch_size: [260, 260]
+  pli_patch_size: [444, 444]
+

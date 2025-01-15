@@ -1,0 +1,47 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: cyto_affine.yaml
+  - override /model: unetdftstyle.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: ddp.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "unetdftstyle-affine"
+
+seed: 299792458
+
+trainer:
+  min_epochs: 100
+  max_epochs: 150
+
+model:
+  lr: 1e-3
+  min_overlap: 0.9999   # Min overlap of 256 x 256 (minus a bit for stability)
+  keep_best: -1
+  rec_loss: mae_loss
+  style_loss: masked_gram
+  equivariant_loss: mse_loss
+  layer_weights: [ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+  style_loss_weight: 33_000.0
+  rec_loss_weight: 0.33
+  equivariant_loss_weight: 0.1
+  register_target: True
+
+  gen:
+    n_classes: 3
+    enc_channels: [32, 64, 128, 256, 512]
+    dec_channels: [512, 256, 128, 64, 32]
+
+datamodule:
+  num_workers: 32
+  batch_size: 32
+  cyto_patch_size: [400, 400]
+  pli_patch_size: [444, 444]
+
