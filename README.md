@@ -90,6 +90,20 @@ sbatch scripts/apply_models.sbatch
 └── README.md                     <- This file
 ```
 
+# DataLad
+
+To retrieve the training data run
+```bash
+datalad get datasets/vervet1818-stained/
+```
+or
+``` bash
+datalad get --reckless=ephemeral datasets/vervet1818-stained
+```
+if you just want to link to the data on a remote without copying the files.
+Additional sources of submodules are specified as `datalad.get.subdataset-source-candidate` in `.datalad/config` (See the [doc](http://handbook.datalad.org/en/latest/beyond_basics/101-148-clonepriority.html)).
+
+Please note that access to the data can only be provided on request.
 
 # How to Cite
 
