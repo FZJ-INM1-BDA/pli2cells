@@ -13,7 +13,7 @@
 Virtual Cresyl violet staining from 3D-PLI.
 
 
-# Quickstart
+## Quickstart
 
 Clone the repository and install it using pip:
 ```bash
@@ -25,7 +25,7 @@ Clone the repository and install it using pip:
 Installation requires `gxx_linux-64` and `openmpi` or `mpich` packages.
 
 
-# Usage
+## Usage
 
 Debugging the pipeline:
 ```bash
@@ -44,7 +44,7 @@ sbatch scripts/apply_models.sbatch
 ```
 
 
-# Project Organization
+## Project Organization
 ```
 ├── configs                       <- Hydra configuration files
 │   ├── callbacks                     <- Callbacks configs
@@ -90,7 +90,7 @@ sbatch scripts/apply_models.sbatch
 └── README.md                     <- This file
 ```
 
-# DataLad
+## DataLad
 
 To retrieve the training data run
 ```bash
@@ -105,7 +105,7 @@ Additional sources of submodules are specified as `datalad.get.subdataset-source
 
 Please note that access to the data can only be provided on request.
 
-# How to Cite
+## How to Cite
 
 If you use this work in your research, please cite it as follows:
 ```
