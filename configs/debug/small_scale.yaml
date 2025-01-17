@@ -1,0 +1,61 @@
+# @package _global_
+
+# runs 1 train, 1 validation and 1 test step
+
+defaults:
+  - default.yaml
+
+trainer:
+  fast_dev_run: true
+
+datamodule:
+  cyto_files:
+    - ${data_dir}/affine/cyto/0000_cyto.h5
+    - ${data_dir}/affine/cyto/0001_cyto.h5
+    - ${data_dir}/affine/cyto/0002_cyto.h5
+    - ${data_dir}/affine/cyto/0003_cyto.h5
+    - ${data_dir}/affine/cyto/0004_cyto.h5
+    - ${data_dir}/affine/cyto/0005_cyto.h5
+    - ${data_dir}/affine/cyto/0006_cyto.h5
+    - ${data_dir}/affine/cyto/0007_cyto.h5
+    - ${data_dir}/affine/cyto/0008_cyto.h5
+
+  trans_files:
+    - ${data_dir}/affine/transmittance/0000_transmittance.h5
+    - ${data_dir}/affine/transmittance/0001_transmittance.h5
+    - ${data_dir}/affine/transmittance/0002_transmittance.h5
+    - ${data_dir}/affine/transmittance/0003_transmittance.h5
+    - ${data_dir}/affine/transmittance/0004_transmittance.h5
+    - ${data_dir}/affine/transmittance/0005_transmittance.h5
+    - ${data_dir}/affine/transmittance/0006_transmittance.h5
+    - ${data_dir}/affine/transmittance/0007_transmittance.h5
+    - ${data_dir}/affine/transmittance/0008_transmittance.h5
+
+  dir_files:
+    - ${data_dir}/affine/direction/0000_direction.h5
+    - ${data_dir}/affine/direction/0001_direction.h5
+    - ${data_dir}/affine/direction/0002_direction.h5
+    - ${data_dir}/affine/direction/0003_direction.h5
+    - ${data_dir}/affine/direction/0004_direction.h5
+    - ${data_dir}/affine/direction/0005_direction.h5
+    - ${data_dir}/affine/direction/0006_direction.h5
+    - ${data_dir}/affine/direction/0007_direction.h5
+    - ${data_dir}/affine/direction/0008_direction.h5
+
+  ret_files:
+    - ${data_dir}/affine/retardation/0000_retardation.h5
+    - ${data_dir}/affine/retardation/0001_retardation.h5
+    - ${data_dir}/affine/retardation/0002_retardation.h5
+    - ${data_dir}/affine/retardation/0003_retardation.h5
+    - ${data_dir}/affine/retardation/0004_retardation.h5
+    - ${data_dir}/affine/retardation/0005_retardation.h5
+    - ${data_dir}/affine/retardation/0006_retardation.h5
+    - ${data_dir}/affine/retardation/0007_retardation.h5
+    - ${data_dir}/affine/retardation/0008_retardation.h5
+
+  # test_sections: [27, 28, 29, 30]
+  train_sections: [0, 1, 2, 3, 4, 5, 6, 7]
+  val_sections: [8]
+  val_seed: 0
+  train_size: 1024
+  val_size: 1024

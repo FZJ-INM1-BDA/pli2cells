@@ -125,8 +125,8 @@ train_size: 32_768
 val_size: 1024
 
 batch_size: 12
-cyto_patch_size: [512, 512]
-pli_patch_size: [256, 256]
+cyto_patch_size: [400, 400]
+pli_patch_size: [444, 444]
 channels: 3
 num_workers: 0
 sections_to_ram: True

@@ -2,6 +2,7 @@ import os
 from typing import Any, List, Dict, Callable, Tuple
 import math
 
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -253,8 +254,9 @@ class DFTGanLitModule(LightningModule):
                     
                     corr = corr_factor_linear(t_numpy)
                     i_numpy = inclination_from_retardation(r_numpy, corr)
-                    fom = hsv_fom(d_numpy, i_numpy)
-                    fom_list.append(f.tensor(fom)[0])
+                    fom = hsv_fom(np.rad2deg(d_numpy), i_numpy)
+                    fom = fom / 255.
+                    fom_list.append(f.tensor(fom, dtype=torch.float32))
 
                 fom_grid = make_grid(fom_list, nrow=nrows, value_range=(0, 1))
                 save_image(fom_grid, f'{im_path}/fom.png')

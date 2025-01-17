@@ -34,7 +34,7 @@ sbatch scripts/debug.sbatch
 
 Full-scale training:
 ```bash
-sbatch scripts/train_jureca.sbatch default
+sbatch scripts/train_jureca.sbatch unetdftstyle_affine
 ```
 where the `default` experiment can be replaced with any configuration under `configs/experiment`.
 

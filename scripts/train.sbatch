@@ -22,8 +22,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 # Run ime-ctl -i --block -K ${FILES} once before using cscratch
 export HDF5_USE_FILE_LOCKING='FALSE'
 
-echo $1
+echo Run experiment $1
 
 srun -c 32 python scripts/train.py \
   experiment=$1 \
-
