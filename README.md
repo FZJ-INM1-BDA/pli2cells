@@ -34,9 +34,9 @@ sbatch scripts/debug.sbatch
 
 Full-scale training:
 ```bash
-sbatch scripts/train_jureca.sbatch unetdftstyle_affine
+sbatch scripts/train.sbatch unetdftstyle_affine
 ```
-where the `default` experiment can be replaced with any configuration under `configs/experiment`.
+where the `unetdftstyle_affine` experiment can be replaced with any configuration under `configs/experiment`.
 
 To apply trained models adjust and run
 ```bash

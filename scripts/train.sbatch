@@ -14,12 +14,10 @@ source $HOME/.bashrc
 echo 'Starting script'
 
 echo "Enabling environment..."
-source environment/activate.sh
+conda activate pli2cells
 
 export CUDA_VISIBLE_DEVICES=0,1,2,3
-# export NCCL_DEBUG=INFO
 
-# Run ime-ctl -i --block -K ${FILES} once before using cscratch
 export HDF5_USE_FILE_LOCKING='FALSE'
 
 echo Run experiment $1
