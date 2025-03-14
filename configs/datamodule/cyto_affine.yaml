@@ -1,33 +1,33 @@
 _target_: pli_cyto.datamodules.aligned.AlignedDataModule
 
 cyto_files:
-  - ${data_dir}/affine/cyto/0000_cyto.h5
-  - ${data_dir}/affine/cyto/0001_cyto.h5
-  - ${data_dir}/affine/cyto/0002_cyto.h5
-  - ${data_dir}/affine/cyto/0003_cyto.h5
-  - ${data_dir}/affine/cyto/0004_cyto.h5
-  - ${data_dir}/affine/cyto/0005_cyto.h5
-  - ${data_dir}/affine/cyto/0006_cyto.h5
-  - ${data_dir}/affine/cyto/0007_cyto.h5
-  - ${data_dir}/affine/cyto/0008_cyto.h5
-  - ${data_dir}/affine/cyto/0009_cyto.h5
-  - ${data_dir}/affine/cyto/0010_cyto.h5
-  - ${data_dir}/affine/cyto/0011_cyto.h5
-  - ${data_dir}/affine/cyto/0012_cyto.h5
-  - ${data_dir}/affine/cyto/0013_cyto.h5
-  - ${data_dir}/affine/cyto/0014_cyto.h5
-  - ${data_dir}/affine/cyto/0015_cyto.h5
-  - ${data_dir}/affine/cyto/0016_cyto.h5
-  - ${data_dir}/affine/cyto/0017_cyto.h5
-  - ${data_dir}/affine/cyto/0018_cyto.h5
-  - ${data_dir}/affine/cyto/0019_cyto.h5
-  - ${data_dir}/affine/cyto/0020_cyto.h5
-  - ${data_dir}/affine/cyto/0021_cyto.h5
-  - ${data_dir}/affine/cyto/0022_cyto.h5
-  - ${data_dir}/affine/cyto/0023_cyto.h5
-  - ${data_dir}/affine/cyto/0024_cyto.h5
-  - ${data_dir}/affine/cyto/0025_cyto.h5
-  - ${data_dir}/affine/cyto/0026_cyto.h5
+  - ${data_dir}/affine/cresyl/0000_cresyl.h5
+  - ${data_dir}/affine/cresyl/0001_cresyl.h5
+  - ${data_dir}/affine/cresyl/0002_cresyl.h5
+  - ${data_dir}/affine/cresyl/0003_cresyl.h5
+  - ${data_dir}/affine/cresyl/0004_cresyl.h5
+  - ${data_dir}/affine/cresyl/0005_cresyl.h5
+  - ${data_dir}/affine/cresyl/0006_cresyl.h5
+  - ${data_dir}/affine/cresyl/0007_cresyl.h5
+  - ${data_dir}/affine/cresyl/0008_cresyl.h5
+  - ${data_dir}/affine/cresyl/0009_cresyl.h5
+  - ${data_dir}/affine/cresyl/0010_cresyl.h5
+  - ${data_dir}/affine/cresyl/0011_cresyl.h5
+  - ${data_dir}/affine/cresyl/0012_cresyl.h5
+  - ${data_dir}/affine/cresyl/0013_cresyl.h5
+  - ${data_dir}/affine/cresyl/0014_cresyl.h5
+  - ${data_dir}/affine/cresyl/0015_cresyl.h5
+  - ${data_dir}/affine/cresyl/0016_cresyl.h5
+  - ${data_dir}/affine/cresyl/0017_cresyl.h5
+  - ${data_dir}/affine/cresyl/0018_cresyl.h5
+  - ${data_dir}/affine/cresyl/0019_cresyl.h5
+  - ${data_dir}/affine/cresyl/0020_cresyl.h5
+  - ${data_dir}/affine/cresyl/0021_cresyl.h5
+  - ${data_dir}/affine/cresyl/0022_cresyl.h5
+  - ${data_dir}/affine/cresyl/0023_cresyl.h5
+  - ${data_dir}/affine/cresyl/0024_cresyl.h5
+  - ${data_dir}/affine/cresyl/0025_cresyl.h5
+  - ${data_dir}/affine/cresyl/0026_cresyl.h5
 
 
 trans_files:
