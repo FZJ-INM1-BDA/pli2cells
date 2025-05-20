@@ -10,10 +10,12 @@
 
 # Fibers to Cells
 
+![Method Overview](./method.png)
+
 Virtual Cresyl violet staining from 3D-PLI.
 
 
-# Quickstart
+## Quickstart
 
 Clone the repository and install it using pip:
 ```bash
@@ -25,7 +27,7 @@ Clone the repository and install it using pip:
 Installation requires `gxx_linux-64` and `openmpi` or `mpich` packages.
 
 
-# Usage
+## Usage
 
 Debugging the pipeline:
 ```bash
@@ -44,7 +46,7 @@ sbatch scripts/apply_models.sbatch
 ```
 
 
-# Project Organization
+## Project Organization
 ```
 ├── configs                       <- Hydra configuration files
 │   ├── callbacks                     <- Callbacks configs
@@ -90,7 +92,7 @@ sbatch scripts/apply_models.sbatch
 └── README.md                     <- This file
 ```
 
-# DataLad
+## DataLad
 
 To retrieve the training data run
 ```bash
@@ -105,9 +107,16 @@ Additional sources of submodules are specified as `datalad.get.subdataset-source
 
 Please note that access to the data can only be provided on request.
 
-# How to Cite
+## How to Cite
 
 If you use this work in your research, please cite it as follows:
-```
-/ Preprint in preperation /
+
+
+```text
+@article{oberstrass2025,
+  title={From Fibers to Cells: Fourier-Based Registration Enables Virtual Cresyl Violet Staining From 3D Polarized Light Imaging},
+  author={Oberstrass, Alexander and Vaca, Esteban and Upschulte, Eric and Niu, Meiqi and {Palomero-Gallagher}, Nicola and Graessel, David and Schiffer, Christian and Axer, Markus and Amunts, Katrin and Dickscheid, Timo},
+  journal={arXiv preprint arXiv:2505.11394},
+  year={2025}
+}
 ```
